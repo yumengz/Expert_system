@@ -85,19 +85,3 @@
 - 用户确认最终结果后，系统将数据保存至数据库，按不同层级进行分类和存档。
 - 数据存储支持高效的检索和查询功能，便于后续管理和分析。
 
-## 安装与运行
-
-### 前提条件
-
-- Python 3.8+ 和 Node.js
-- 安装所需的依赖：
-  - `torch`, `transformers`（用于大语言模型）
-  - `flask`（后端 API 服务）
-  - `angular`（前端开发）
-
-### 安装步骤
-
-1. **克隆项目代码**：
-   ```bash
-   git clone https://github.com/your-username/expert-system.git
-   cd expert-system
