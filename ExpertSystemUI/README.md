@@ -1,17 +1,19 @@
-cd ExpertSystemUI/package
+# UI development manual
 
+
+```
+cd ExpertSystemUI/package
 brew reinstall icu4c
 brew link icu4c --force
 brew install node
 npm install
 npm install -g @angular/cli
-
 ng serve
 ```
 
 ## 🚀 Launch the App on PC as a Server 🚀
 
-```sh
+```
 brew install ngrok
 ng serve --host 0.0.0.0
 ngrok config add-authtoken 2sn4A0Pahj9814dmTAnVHk7jrdj_7ewKDSb8sSCwivAeLCwXb
