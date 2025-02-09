@@ -8,6 +8,21 @@ npm install -g @angular/cli
 
 ng serve
 
+🚀🚀🚀🚀🚀 launch the app at the PC and act as server 🚀🚀🚀🚀🚀
+brew install ngrok
+ng serve --host 0.0.0.0
+ngrok config add-authtoken 2sn4A0Pahj9814dmTAnVHk7jrdj_7ewKDSb8sSCwivAeLCwXb
+
+In a new terminal window, run: ngrok http 4200
+This will create a secure public URL that you can share. For example:
+Forwarding                    http://abcd1234.ngrok.io -> http://localhost:4200
+
+
+
+
+
+
+
 ├─────────────────────────────────────▶ Project structure ◀──────────────────────────────────────────┤
 
 The entry point of the app is app.component.ts and its associated HTML file app.component.html
