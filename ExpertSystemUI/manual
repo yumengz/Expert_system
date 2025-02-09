@@ -1,0 +1,15 @@
+cd ExpertSystemUI/package
+
+brew reinstall icu4c
+brew link icu4c --force
+brew install node
+npm install
+npm install -g @angular/cli
+
+ng serve
+
+├─────────────────────────────────────▶ Project structure ◀──────────────────────────────────────────┤
+
+The entry point of the app is app.component.ts and its associated HTML file app.component.html
+The content displayed is determined by app.routes.ts and pages.routes.ts
+default home page: pages/starter/starter.component.html  ==> All dashboard stuff
