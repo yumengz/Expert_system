@@ -1,0 +1,23 @@
+<div class="playground-container">
+    <h2>LLM Playground</h2>
+  
+    <!-- Input Field -->
+    <textarea [(ngModel)]="userInput" 
+              placeholder="Ask something..."
+              rows="3"
+              class="input-box">
+    </textarea>
+  
+    <!-- Submit Button -->
+    <button (click)="sendQuery()" 
+            [disabled]="isLoading || !userInput.trim()"
+            class="submit-btn">
+      {{ isLoading ? 'Thinking...' : 'Ask AI' }}
+    </button>
+  
+    <!-- AI Response -->
+    <div *ngIf="response" class="response-box">
+      {{ response }}
+    </div>
+  </div>
+  

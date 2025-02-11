@@ -1,3 +1,8 @@
+// ✅ Replaces app.module.ts (uses Angular Standalone API).
+// ✅ Sets up core Angular features: Routing, HTTP, Change Detection, Animations.
+// ✅ Includes third-party integrations: Angular Material, Tabler Icons, ngx-scrollbar.
+// ✅ Optimized for performance: provideZoneChangeDetection, provideAnimationsAsync2
+
 import {
   ApplicationConfig,
   provideZoneChangeDetection,

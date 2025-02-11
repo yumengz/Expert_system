@@ -8,6 +8,11 @@ import { AppSalesOurVisitorsComponent } from 'src/app/components/our-visitors/ou
 import { AppProfileCardComponent } from 'src/app/components/profile-card/profile-card.component';
 
 
+// Import the new components
+import { AppLlmPlaygroundComponent } from 'src/app/components/llm-playground/llm-playground.component';
+import { AppChatSessionComponent } from 'src/app/components/chat-session/chat-session.component';
+
+
 @Component({
   selector: 'app-starter',
   imports: [
@@ -16,7 +21,9 @@ import { AppProfileCardComponent } from 'src/app/components/profile-card/profile
     AppSalesOurVisitorsComponent,
     AppProfileCardComponent,
     AppMyContactsComponent,
-    AppActivityTimelineComponent
+    AppActivityTimelineComponent,
+    AppLlmPlaygroundComponent,  // Added LLM Playground
+    AppChatSessionComponent,     // Added Chat Session
   ],
   templateUrl: './starter.component.html',
   encapsulation: ViewEncapsulation.None,

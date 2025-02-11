@@ -1,11 +1,11 @@
 <!-- Bootstrap Grid System -->
 <!-- Defines a horizontal row. -->
+
+<!-- 
 <div class="row">
-  <!-- Takes 8 out of 12 columns in the Bootstrap grid (two-thirds of the row). -->
   <div class="col-lg-8">
     <app-sales-overview></app-sales-overview>
   </div>
-  <!-- Takes 4 out of 12 columns (one-third of the row). -->
   <div class="col-lg-4">
     <app-our-visitors></app-our-visitors>
   </div>
@@ -24,4 +24,19 @@
     <app-activity-timeline></app-activity-timeline>
   </div>
 
+</div>
+-->
+
+<div class="row" style="height: 70vh;">
+  <!-- LLM Playground (Takes 70% of the viewport height) -->
+  <div class="col-12">
+    <app-llm-playground></app-llm-playground>
+  </div>
+</div>
+
+<div class="row" style="height: 30vh;">
+  <!-- Chat Session (Takes 30% of the viewport height) -->
+  <div class="col-12">
+    <app-chat-session></app-chat-session>
+  </div>
 </div>
