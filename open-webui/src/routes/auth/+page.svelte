@@ -145,12 +145,17 @@
 		<div class="fixed m-10 z-50">
 			<div class="flex space-x-2">
 				<div class=" self-center">
-					<img
+					<!-- <img
 						crossorigin="anonymous"
 						src="{WEBUI_BASE_URL}/static/splash.png"
 						class=" w-6 rounded-full dark:invert"
 						alt="logo"
-					/>
+					/> -->
+					<img
+					src="{WEBUI_BASE_URL}/static/splash.png"
+					class=" w-6 rounded-full dark:invert"
+					alt="logo"
+				/>
 				</div>
 			</div>
 		</div>

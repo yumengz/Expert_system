@@ -96,3 +96,77 @@ helm install ollama-webui ./ollama-webui-*.tgz --set ollama.resources.limits.nvi
 ```
 
 Check the `kubernetes/helm/values.yaml` file to know which parameters are available for customization
+
+
+
+
+
+🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+npm install -g pnpm
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+pnpm install
+
+🚨🚨🚨🚨🚨🚨🚨🚨if pnpm install error, try these🚨🚨🚨🚨🚨🚨🚨
+curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.4/install.sh | bash
+source ~/.bashrc 
+nvm install 20
+nvm use 20
+node -v
+pnpm install
+
+
+
+1️⃣ Running in Development Mode (Local)
+
+Front end
+
+
+cp -RPp .env.example .env
+npm install
+npm run dev
+
+rm -rf node_modules package-lock.json
+npm cache clean --force
+
+
+
+
+1️⃣ Start the Backend
+Go to the backend directory:
+
+
+cd backend
+conda create --name open-webui python=3.11
+conda activate open-webui
+
+pip install -r requirements.txt -U
+
+sh dev.sh
+
+Kill the port
+lsof -i :8080
+
+lsof -i :5175
+
+
+kill -9 22048
+
+
+
+
+rm -rf node_modules package-lock.json .vite
+npm cache clean --force
+npm install
+
+Clear backend cache:
+
+cd backend
+rm -rf __pycache__
+Restart everything:
+
+cd backend
+sh dev.sh
+Then, restart the frontend:
+
+npm run dev
+

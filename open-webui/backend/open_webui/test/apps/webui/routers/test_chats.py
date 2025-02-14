@@ -35,7 +35,7 @@ class TestChats(AbstractPostgresTest):
         assert response.status_code == 200
         first_chat = response.json()[0]
         assert first_chat["id"] is not None
-        assert first_chat["title"] == "New Chat"
+        assert first_chat["title"] == "Yumeng --- 5"
         assert first_chat["created_at"] is not None
         assert first_chat["updated_at"] is not None
 

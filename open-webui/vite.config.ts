@@ -1,6 +1,6 @@
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
-
+import fs from 'fs'
 // /** @type {import('vite').Plugin} */
 // const viteServerConfig = {
 // 	name: 'log-request-middleware',
@@ -26,5 +26,18 @@ export default defineConfig({
 	},
 	worker: {
 		format: 'es'
-	}
+	},
+// yumeng added
+	server: {
+		https: {
+			key: fs.readFileSync('ssl/localhost.key'),
+			cert: fs.readFileSync('ssl/localhost.crt'),
+		  },
+		allowedHosts: ['fatal-golden-horse-medications.trycloudflare.com'], // Allows any subdomain of ngrok-free.app
+		// allowedHosts: "all",
+		strictPort: true, // Keeps the same port
+	  },
+
 });
+
+

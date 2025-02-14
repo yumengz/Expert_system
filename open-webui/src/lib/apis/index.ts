@@ -237,7 +237,7 @@ export const generateTitle = async (
 		throw error;
 	}
 
-	return res?.choices[0]?.message?.content.replace(/["']/g, '') ?? 'New Chat';
+	return res?.choices[0]?.message?.content.replace(/["']/g, '') ?? 'Yumeng --- 7';
 };
 
 export const generateTags = async (

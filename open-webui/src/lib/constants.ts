@@ -3,8 +3,15 @@ import { browser, dev } from '$app/environment';
 
 export const APP_NAME = 'Open WebUI';
 
+
+// Yumeng's change
+// export const WEBUI_HOSTNAME = browser ? (dev ? `represent-pets-korea-opposite.trycloudflare.com:8080` : ``) : '';
+
 export const WEBUI_HOSTNAME = browser ? (dev ? `${location.hostname}:8080` : ``) : '';
-export const WEBUI_BASE_URL = browser ? (dev ? `http://${WEBUI_HOSTNAME}` : ``) : ``;
+// Yumeng's change
+// export const WEBUI_BASE_URL = browser ? (dev ? `http://${WEBUI_HOSTNAME}` : ``) : ``;
+export const WEBUI_BASE_URL = browser ? (dev ? `https://${WEBUI_HOSTNAME}` : ``) : ``;
+
 export const WEBUI_API_BASE_URL = `${WEBUI_BASE_URL}/api/v1`;
 
 export const OLLAMA_API_BASE_URL = `${WEBUI_BASE_URL}/ollama`;

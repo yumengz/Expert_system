@@ -326,6 +326,13 @@ class SPAStaticFiles(StaticFiles):
             else:
                 raise ex
 
+print(
+    rf"""
+(ノ°▽°)ノ  
+"""
+)
+
+
 
 print(
     rf"""
@@ -360,7 +367,19 @@ app = FastAPI(
     lifespan=lifespan,
 )
 
+# Yumeng: Force HTTPS in FastAPI Redirects： not work
+# from fastapi.middleware.httpsredirect import HTTPSRedirectMiddleware
+# app.add_middleware(HTTPSRedirectMiddleware)
+
+
+# import ssl
+# ssl_context = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER)
+# ssl_context.load_cert_chain('ssl/cert.pem', keyfile='ssl/key.pem')
+
+
+
 app.state.config = AppConfig()
+
 
 
 ########################################
@@ -734,9 +753,18 @@ async def inspect_websocket(request: Request, call_next):
     return await call_next(request)
 
 
+allow_origins = [
+    "https://localhost:5173",
+    "https://moody-radios-speak.loca.lt",
+    "https://localhost:3000", "https://localhost:8080",
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=CORS_ALLOW_ORIGIN,
+    # allow_origins=CORS_ALLOW_ORIGIN,
+    # Yumeng: Somehow when I rerun I face config pull error, use this work
+    # allow_origins=["http://localhost:5173", "http://localhost:3000", "http://localhost:8080"],
+    allow_origins=allow_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -1218,3 +1246,5 @@ else:
     log.warning(
         f"Frontend build directory not found at '{FRONTEND_BUILD_DIR}'. Serving API only."
     )
+
+

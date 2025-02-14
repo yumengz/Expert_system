@@ -111,7 +111,7 @@ class ChatTable:
                     "title": (
                         form_data.chat["title"]
                         if "title" in form_data.chat
-                        else "New Chat"
+                        else "Yumeng --- 1"
                     ),
                     "chat": form_data.chat,
                     "created_at": int(time.time()),
@@ -137,7 +137,7 @@ class ChatTable:
                     "title": (
                         form_data.chat["title"]
                         if "title" in form_data.chat
-                        else "New Chat"
+                        else "Yumeng --- 2"
                     ),
                     "chat": form_data.chat,
                     "meta": form_data.meta,
@@ -159,7 +159,7 @@ class ChatTable:
             with get_db() as db:
                 chat_item = db.get(Chat, id)
                 chat_item.chat = chat
-                chat_item.title = chat["title"] if "title" in chat else "New Chat"
+                chat_item.title = chat["title"] if "title" in chat else "Yumeng --- 3"
                 chat_item.updated_at = int(time.time())
                 db.commit()
                 db.refresh(chat_item)
@@ -203,7 +203,7 @@ class ChatTable:
         if chat is None:
             return None
 
-        return chat.chat.get("title", "New Chat")
+        return chat.chat.get("title", "Yumeng --- 4")
 
     def get_messages_by_chat_id(self, id: str) -> Optional[dict]:
         chat = self.get_chat_by_id(id)
