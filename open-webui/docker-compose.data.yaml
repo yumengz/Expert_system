@@ -2,3 +2,4 @@ services:
   ollama:
     volumes:
       - ${OLLAMA_DATA_DIR-./ollama-data}:/root/.ollama 
+ 
