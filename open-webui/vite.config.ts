@@ -33,7 +33,7 @@ export default defineConfig({
 			key: fs.readFileSync('ssl/localhost.key'),
 			cert: fs.readFileSync('ssl/localhost.crt'),
 		  },
-		allowedHosts: ['fatal-golden-horse-medications.trycloudflare.com'], // Allows any subdomain of ngrok-free.app
+		// allowedHosts: ['fatal-golden-horse-medications.trycloudflare.com'], // Allows any subdomain of ngrok-free.app
 		// allowedHosts: "all",
 		strictPort: true, // Keeps the same port
 	  },
