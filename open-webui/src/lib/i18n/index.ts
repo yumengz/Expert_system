@@ -41,7 +41,9 @@ export const initI18n = (defaultLocale: string | undefined) => {
 	let detectionOrder = defaultLocale
 		? ['querystring', 'localStorage']
 		: ['querystring', 'localStorage', 'navigator'];
-	let fallbackDefaultLocale = defaultLocale ? [defaultLocale] : ['en-US'];
+	// let fallbackDefaultLocale = defaultLocale ? [defaultLocale] : ['en-US'];
+	// Yumei Edited in Feb 17; Change default setting to Chinese 
+	let fallbackDefaultLocale = defaultLocale ? [defaultLocale] : ['zh-CN'];
 
 	const loadResource = (language: string, namespace: string) =>
 		import(`./locales/${language}/${namespace}.json`);
