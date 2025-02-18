@@ -9,8 +9,8 @@ export const APP_NAME = 'Open WebUI';
 
 export const WEBUI_HOSTNAME = browser ? (dev ? `${location.hostname}:8080` : ``) : '';
 // Yumeng's change
-// export const WEBUI_BASE_URL = browser ? (dev ? `http://${WEBUI_HOSTNAME}` : ``) : ``;
-export const WEBUI_BASE_URL = browser ? (dev ? `https://${WEBUI_HOSTNAME}` : ``) : ``;
+export const WEBUI_BASE_URL = browser ? (dev ? `http://${WEBUI_HOSTNAME}` : ``) : ``;
+// export const WEBUI_BASE_URL = browser ? (dev ? `https://${WEBUI_HOSTNAME}` : ``) : ``;
 
 export const WEBUI_API_BASE_URL = `${WEBUI_BASE_URL}/api/v1`;
 
