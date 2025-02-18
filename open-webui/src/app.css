@@ -22,9 +22,6 @@
 	font-display: swap;
 }
 
-html {
-	word-break: break-word;
-}
 
 code {
 	/* white-space-collapse: preserve !important; */
@@ -65,7 +62,7 @@ math {
 }
 
 .font-primary {
-	font-family: 'Archivo', sans-serif;
+	font-family: 'Noto Sans SC','Archivo', sans-serif;
 }
 
 .drag-region {
@@ -359,4 +356,16 @@ input[type='number'] {
 
 .hljs-strong {
 	font-weight: 700;
+}
+
+
+@font-face {
+    font-family: 'Noto Sans SC';
+    src: url('/assets/fonts/NotoSansSC-VariableFont_wght.ttf');
+    font-display: swap;
+}
+
+html {
+    word-break: break-word;
+    font-family: 'Noto Sans SC', 'Inter', 'Archivo', 'Mona Sans', 'InstrumentSerif', sans-serif;
 }
