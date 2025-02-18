@@ -29,12 +29,12 @@ export default defineConfig({
 	},
 // yumeng added
 	server: {
-		https: {
-			key: fs.readFileSync('ssl/localhost.key'),
-			cert: fs.readFileSync('ssl/localhost.crt'),
-		  },
-		allowedHosts: ['fatal-golden-horse-medications.trycloudflare.com'], // Allows any subdomain of ngrok-free.app
-		// allowedHosts: "all",
+		// https: {
+		// 	key: fs.readFileSync('ssl/localhost.key'),
+		// 	cert: fs.readFileSync('ssl/localhost.crt'),
+		//   },
+		// allowedHosts: ['all'], 
+
 		strictPort: true, // Keeps the same port
 	  },
 
