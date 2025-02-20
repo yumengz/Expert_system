@@ -121,7 +121,7 @@ Defines TypeScript types used throughout the frontend.
 📁 routes/ — Page-Level Components
 
 
-📜 Understanding the routes Folder in Open WebUI (SvelteKit)
+📜 Understanding the routes Folder in 澜仔懂电 (SvelteKit)
 SvelteKit is used to handle routing. The routes system in SvelteKit is file-based, meaning the structure of the files inside routes/ determines the application's URL paths.
 
 📁 Routes Folder Overview

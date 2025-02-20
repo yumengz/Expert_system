@@ -685,9 +685,9 @@
 	"Open file": "Dosyayı aç",
 	"Open in full screen": "Tam ekranda aç",
 	"Open new chat": "Yeni sohbet aç",
-	"Open WebUI uses faster-whisper internally.": "Open WebUI, dahili olarak daha hızlı-fısıltı kullanır.",
-	"Open WebUI uses SpeechT5 and CMU Arctic speaker embeddings.": "Open WebUI, SpeechT5 ve CMU Arctic konuşmacı gömme kullanır.",
-	"Open WebUI version (v{{OPEN_WEBUI_VERSION}}) is lower than required version (v{{REQUIRED_VERSION}})": "Open-WebUI sürümü (v{{OPEN_WEBUI_VERSION}}) gerekli sürümden (v{{REQUIRED_VERSION}}) düşük",
+	"澜仔懂电 uses faster-whisper internally.": "澜仔懂电, dahili olarak daha hızlı-fısıltı kullanır.",
+	"澜仔懂电 uses SpeechT5 and CMU Arctic speaker embeddings.": "澜仔懂电, SpeechT5 ve CMU Arctic konuşmacı gömme kullanır.",
+	"澜仔懂电 version (v{{OPEN_WEBUI_VERSION}}) is lower than required version (v{{REQUIRED_VERSION}})": "Open-WebUI sürümü (v{{OPEN_WEBUI_VERSION}}) gerekli sürümden (v{{REQUIRED_VERSION}}) düşük",
 	"OpenAI": "OpenAI",
 	"OpenAI API": "OpenAI API",
 	"OpenAI API Config": "OpenAI API Konfigürasyonu",
@@ -1088,7 +1088,7 @@
 	"You're a helpful assistant.": "Sen yardımsever bir asistansın.",
 	"You're now logged in.": "Şimdi giriş yaptınız.",
 	"Your account status is currently pending activation.": "Hesap durumunuz şu anda etkinleştirilmeyi bekliyor.",
-	"Your entire contribution will go directly to the plugin developer; Open WebUI does not take any percentage. However, the chosen funding platform might have its own fees.": "Tüm katkınız doğrudan eklenti geliştiricisine gidecektir; Open WebUI herhangi bir yüzde almaz. Ancak seçilen finansman platformunun kendi ücretleri olabilir.",
+	"Your entire contribution will go directly to the plugin developer; 澜仔懂电 does not take any percentage. However, the chosen funding platform might have its own fees.": "Tüm katkınız doğrudan eklenti geliştiricisine gidecektir; 澜仔懂电 herhangi bir yüzde almaz. Ancak seçilen finansman platformunun kendi ücretleri olabilir.",
 	"Youtube": "Youtube",
 	"Youtube Loader Settings": "Youtube Yükleyici Ayarları"
 }

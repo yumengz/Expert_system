@@ -17,7 +17,7 @@
 #     if value:
 #         from open_webui.env import VERSION
 
-#         typer.echo(f"Open WebUI version: {VERSION}")
+#         typer.echo(f"澜仔懂电 version: {VERSION}")
 #         raise typer.Exit()
 
 
