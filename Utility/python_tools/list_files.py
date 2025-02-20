@@ -78,5 +78,5 @@ def print_directory_structure(path, indent=0, level=None, omit=False):
         print('  ' * indent + f"[ERROR] Path Not Found: {path}")
 
 # Example usage: Provide the path you want to explore
-directory_path = "/Users/yeyumei/Documents/GitHub/Expert_system/open-webui/src"  # Change this to your target path
-print_directory_structure(directory_path, level=3, omit=True)
+directory_path = "/Users/yumengzhou/Documents/GitHub/Expert_system/open-webui"  # Change this to your target path
+print_directory_structure(directory_path, level=1, omit=True)

@@ -1,7 +1,9 @@
 services:
   ollama:
     volumes:
-      - ollama:/root/.ollama
+      # - ollama:/root/.ollama
+      - ~/.ollama:/root/.ollama  # Mount yumeng local Ollama models into the container
+
     container_name: ollama
     pull_policy: always
     tty: true
@@ -27,6 +29,19 @@ services:
       - 'WEBUI_SECRET_KEY='
     extra_hosts:
       - host.docker.internal:host-gateway
+    restart: unless-stopped
+
+  nginx:
+    image: nginx:alpine
+    container_name: open-webui-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./conf.d:/etc/nginx/conf.d
+      - /etc/letsencrypt:/etc/letsencrypt  # Ensure full Let's Encrypt directory is mounted
+    depends_on:
+      - open-webui
     restart: unless-stopped
 
 volumes:
